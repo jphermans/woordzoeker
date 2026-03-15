@@ -306,7 +306,7 @@
 
         function selectRandomWords() {
             const randomList = wordLists[Math.floor(Math.random() * wordLists.length)];
-            words = [...randomList].sort(() => Math.random() - 0.5).slice(0, 8);
+            words = [...randomList].sort(() => Math.random() - 0.5).slice(0, 10);
             foundWords = [];
             placedWordPositions = {};
         }
