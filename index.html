@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woordzoeker - 2026-03-22</title>
+    <title>Woordzoeker - 2026-03-23</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
@@ -37,7 +37,7 @@
 <body>
     <div class="container">
         <h1>🔍 Woordzoeker</h1>
-        <p class="subtitle">Vind alle 10 Nederlandse woorden! <span class="date-badge">2026-03-22</span></p>
+        <p class="subtitle">Vind alle 10 Nederlandse woorden! <span class="date-badge">2026-03-23</span></p>
         <div class="instructions"><strong>Instructies:</strong> Klik en sleep over letters om woorden te selecteren. Woorden kunnen horizontaal, verticaal en diagonaal verborgen zijn.<br><strong>✨ Je voortgang wordt automatisch bewaard!</strong></div>
         <div class="game-area">
             <div class="grid-container"><div id="grid"></div></div>
@@ -52,8 +52,8 @@
         </div>
     </div>
     <script>
-        const GRID_SIZE = 12, STORAGE_KEY = 'woordzoeker_2026-03-22';
-        const grid = [["Y", "T", "V", "X", "N", "W", "L", "A", "I", "C", "S", "O"], ["F", "G", "X", "B", "N", "R", "Z", "I", "V", "L", "Q", "M"], ["N", "K", "P", "A", "E", "V", "O", "O", "O", "J", "N", "E"], ["V", "I", "U", "D", "L", "P", "C", "O", "Z", "N", "F", "E"], ["M", "Z", "I", "M", "E", "L", "L", "P", "H", "O", "Z", "R"], ["Q", "I", "B", "I", "T", "E", "E", "O", "Z", "K", "L", "V"], ["D", "L", "G", "N", "S", "G", "E", "J", "S", "K", "I", "T"], ["L", "V", "G", "T", "R", "E", "G", "V", "Y", "A", "S", "E"], ["O", "E", "N", "O", "O", "I", "V", "N", "F", "R", "Y", "O"], ["U", "R", "S", "N", "W", "P", "B", "U", "S", "M", "K", "M"], ["F", "B", "Y", "C", "N", "S", "B", "O", "K", "J", "N", "Y"], ["H", "A", "N", "D", "B", "A", "L", "X", "V", "N", "G", "R"]], words = ["BUS", "BADMINTON", "EIKHOORN", "GEEL", "KARMJN", "ZILVER", "MEER", "HANDBAL", "SPIEGEL", "WORSTELEN"], placedWordPositions = {"BADMINTON": [{"x": 3, "y": 1}, {"x": 3, "y": 2}, {"x": 3, "y": 3}, {"x": 3, "y": 4}, {"x": 3, "y": 5}, {"x": 3, "y": 6}, {"x": 3, "y": 7}, {"x": 3, "y": 8}, {"x": 3, "y": 9}], "WORSTELEN": [{"x": 4, "y": 9}, {"x": 4, "y": 8}, {"x": 4, "y": 7}, {"x": 4, "y": 6}, {"x": 4, "y": 5}, {"x": 4, "y": 4}, {"x": 4, "y": 3}, {"x": 4, "y": 2}, {"x": 4, "y": 1}], "EIKHOORN": [{"x": 11, "y": 7}, {"x": 10, "y": 6}, {"x": 9, "y": 5}, {"x": 8, "y": 4}, {"x": 7, "y": 3}, {"x": 6, "y": 2}, {"x": 5, "y": 1}, {"x": 4, "y": 0}], "HANDBAL": [{"x": 0, "y": 11}, {"x": 1, "y": 11}, {"x": 2, "y": 11}, {"x": 3, "y": 11}, {"x": 4, "y": 11}, {"x": 5, "y": 11}, {"x": 6, "y": 11}], "SPIEGEL": [{"x": 5, "y": 10}, {"x": 5, "y": 9}, {"x": 5, "y": 8}, {"x": 5, "y": 7}, {"x": 5, "y": 6}, {"x": 5, "y": 5}, {"x": 5, "y": 4}], "KARMJN": [{"x": 9, "y": 6}, {"x": 9, "y": 7}, {"x": 9, "y": 8}, {"x": 9, "y": 9}, {"x": 9, "y": 10}, {"x": 9, "y": 11}], "ZILVER": [{"x": 1, "y": 4}, {"x": 1, "y": 5}, {"x": 1, "y": 6}, {"x": 1, "y": 7}, {"x": 1, "y": 8}, {"x": 1, "y": 9}], "GEEL": [{"x": 6, "y": 7}, {"x": 6, "y": 6}, {"x": 6, "y": 5}, {"x": 6, "y": 4}], "MEER": [{"x": 11, "y": 1}, {"x": 11, "y": 2}, {"x": 11, "y": 3}, {"x": 11, "y": 4}], "BUS": [{"x": 6, "y": 9}, {"x": 7, "y": 9}, {"x": 8, "y": 9}]};
+        const GRID_SIZE = 12, STORAGE_KEY = 'woordzoeker_2026-03-23';
+        const grid = [["A", "D", "I", "A", "R", "X", "K", "P", "N", "R", "J", "S"], ["U", "Y", "R", "Q", "X", "Y", "I", "F", "I", "E", "S", "D"], ["P", "P", "C", "D", "K", "A", "E", "T", "S", "K", "E", "Z"], ["V", "L", "I", "E", "G", "T", "U", "I", "G", "F", "A", "O"], ["S", "E", "N", "D", "Y", "G", "A", "N", "S", "J", "F", "S"], ["U", "O", "J", "D", "B", "H", "D", "K", "P", "P", "N", "O"], ["M", "O", "I", "B", "W", "V", "O", "E", "T", "B", "A", "L"], ["X", "U", "D", "O", "R", "E", "S", "Z", "Z", "L", "O", "Z"], ["F", "N", "R", "O", "Q", "I", "L", "K", "R", "I", "J", "T"], ["Y", "U", "O", "T", "U", "G", "E", "P", "F", "C", "J", "X"], ["G", "X", "G", "F", "L", "I", "M", "M", "G", "Z", "N", "N"], ["J", "G", "E", "I", "L", "V", "F", "E", "W", "Z", "Y", "W"]], words = ["BOOT", "KRIJT", "RIEM", "KIP", "STEAK", "GORDIJN", "VLIEGTUIG", "GANS", "VOETBAL", "ZWEFVLIEG"], placedWordPositions = {"VLIEGTUIG": [{"x": 0, "y": 3}, {"x": 1, "y": 3}, {"x": 2, "y": 3}, {"x": 3, "y": 3}, {"x": 4, "y": 3}, {"x": 5, "y": 3}, {"x": 6, "y": 3}, {"x": 7, "y": 3}, {"x": 8, "y": 3}], "ZWEFVLIEG": [{"x": 9, "y": 11}, {"x": 8, "y": 11}, {"x": 7, "y": 11}, {"x": 6, "y": 11}, {"x": 5, "y": 11}, {"x": 4, "y": 11}, {"x": 3, "y": 11}, {"x": 2, "y": 11}, {"x": 1, "y": 11}], "GORDIJN": [{"x": 2, "y": 10}, {"x": 2, "y": 9}, {"x": 2, "y": 8}, {"x": 2, "y": 7}, {"x": 2, "y": 6}, {"x": 2, "y": 5}, {"x": 2, "y": 4}], "VOETBAL": [{"x": 5, "y": 6}, {"x": 6, "y": 6}, {"x": 7, "y": 6}, {"x": 8, "y": 6}, {"x": 9, "y": 6}, {"x": 10, "y": 6}, {"x": 11, "y": 6}], "KRIJT": [{"x": 7, "y": 8}, {"x": 8, "y": 8}, {"x": 9, "y": 8}, {"x": 10, "y": 8}, {"x": 11, "y": 8}], "STEAK": [{"x": 8, "y": 2}, {"x": 7, "y": 2}, {"x": 6, "y": 2}, {"x": 5, "y": 2}, {"x": 4, "y": 2}], "BOOT": [{"x": 3, "y": 6}, {"x": 3, "y": 7}, {"x": 3, "y": 8}, {"x": 3, "y": 9}], "RIEM": [{"x": 4, "y": 7}, {"x": 5, "y": 8}, {"x": 6, "y": 9}, {"x": 7, "y": 10}], "GANS": [{"x": 5, "y": 4}, {"x": 6, "y": 4}, {"x": 7, "y": 4}, {"x": 8, "y": 4}], "KIP": [{"x": 9, "y": 2}, {"x": 8, "y": 1}, {"x": 7, "y": 0}]};
         let foundWords = [], isSelecting = false, selectedCells = [], startCell = null;
         
         console.log('Woorden in deze puzzle:', words);
