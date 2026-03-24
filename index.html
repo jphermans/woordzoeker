@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woordzoeker - 2026-03-23</title>
+    <title>Woordzoeker - 2026-03-24</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
@@ -37,7 +37,7 @@
 <body>
     <div class="container">
         <h1>🔍 Woordzoeker</h1>
-        <p class="subtitle">Vind alle 10 Nederlandse woorden! <span class="date-badge">2026-03-23</span></p>
+        <p class="subtitle">Vind alle 10 Nederlandse woorden! <span class="date-badge">2026-03-24</span></p>
         <div class="instructions"><strong>Instructies:</strong> Klik en sleep over letters om woorden te selecteren. Woorden kunnen horizontaal, verticaal en diagonaal verborgen zijn.<br><strong>✨ Je voortgang wordt automatisch bewaard!</strong></div>
         <div class="game-area">
             <div class="grid-container"><div id="grid"></div></div>
@@ -52,8 +52,8 @@
         </div>
     </div>
     <script>
-        const GRID_SIZE = 12, STORAGE_KEY = 'woordzoeker_2026-03-23';
-        const grid = [["A", "D", "I", "A", "R", "X", "K", "P", "N", "R", "J", "S"], ["U", "Y", "R", "Q", "X", "Y", "I", "F", "I", "E", "S", "D"], ["P", "P", "C", "D", "K", "A", "E", "T", "S", "K", "E", "Z"], ["V", "L", "I", "E", "G", "T", "U", "I", "G", "F", "A", "O"], ["S", "E", "N", "D", "Y", "G", "A", "N", "S", "J", "F", "S"], ["U", "O", "J", "D", "B", "H", "D", "K", "P", "P", "N", "O"], ["M", "O", "I", "B", "W", "V", "O", "E", "T", "B", "A", "L"], ["X", "U", "D", "O", "R", "E", "S", "Z", "Z", "L", "O", "Z"], ["F", "N", "R", "O", "Q", "I", "L", "K", "R", "I", "J", "T"], ["Y", "U", "O", "T", "U", "G", "E", "P", "F", "C", "J", "X"], ["G", "X", "G", "F", "L", "I", "M", "M", "G", "Z", "N", "N"], ["J", "G", "E", "I", "L", "V", "F", "E", "W", "Z", "Y", "W"]], words = ["BOOT", "KRIJT", "RIEM", "KIP", "STEAK", "GORDIJN", "VLIEGTUIG", "GANS", "VOETBAL", "ZWEFVLIEG"], placedWordPositions = {"VLIEGTUIG": [{"x": 0, "y": 3}, {"x": 1, "y": 3}, {"x": 2, "y": 3}, {"x": 3, "y": 3}, {"x": 4, "y": 3}, {"x": 5, "y": 3}, {"x": 6, "y": 3}, {"x": 7, "y": 3}, {"x": 8, "y": 3}], "ZWEFVLIEG": [{"x": 9, "y": 11}, {"x": 8, "y": 11}, {"x": 7, "y": 11}, {"x": 6, "y": 11}, {"x": 5, "y": 11}, {"x": 4, "y": 11}, {"x": 3, "y": 11}, {"x": 2, "y": 11}, {"x": 1, "y": 11}], "GORDIJN": [{"x": 2, "y": 10}, {"x": 2, "y": 9}, {"x": 2, "y": 8}, {"x": 2, "y": 7}, {"x": 2, "y": 6}, {"x": 2, "y": 5}, {"x": 2, "y": 4}], "VOETBAL": [{"x": 5, "y": 6}, {"x": 6, "y": 6}, {"x": 7, "y": 6}, {"x": 8, "y": 6}, {"x": 9, "y": 6}, {"x": 10, "y": 6}, {"x": 11, "y": 6}], "KRIJT": [{"x": 7, "y": 8}, {"x": 8, "y": 8}, {"x": 9, "y": 8}, {"x": 10, "y": 8}, {"x": 11, "y": 8}], "STEAK": [{"x": 8, "y": 2}, {"x": 7, "y": 2}, {"x": 6, "y": 2}, {"x": 5, "y": 2}, {"x": 4, "y": 2}], "BOOT": [{"x": 3, "y": 6}, {"x": 3, "y": 7}, {"x": 3, "y": 8}, {"x": 3, "y": 9}], "RIEM": [{"x": 4, "y": 7}, {"x": 5, "y": 8}, {"x": 6, "y": 9}, {"x": 7, "y": 10}], "GANS": [{"x": 5, "y": 4}, {"x": 6, "y": 4}, {"x": 7, "y": 4}, {"x": 8, "y": 4}], "KIP": [{"x": 9, "y": 2}, {"x": 8, "y": 1}, {"x": 7, "y": 0}]};
+        const GRID_SIZE = 12, STORAGE_KEY = 'woordzoeker_2026-03-24';
+        const grid = [["N", "W", "M", "S", "L", "H", "G", "I", "T", "N", "T", "J"], ["N", "I", "U", "T", "V", "C", "O", "E", "U", "B", "B", "S"], ["S", "K", "E", "K", "Y", "O", "D", "H", "T", "K", "S", "I"], ["T", "N", "A", "S", "D", "P", "E", "B", "S", "K", "L", "N"], ["M", "N", "T", "D", "K", "U", "N", "Z", "R", "E", "O", "N"], ["V", "A", "G", "D", "U", "I", "P", "H", "O", "M", "I", "E"], ["Z", "F", "T", "C", "Z", "K", "X", "Y", "V", "M", "S", "T"], ["C", "V", "R", "L", "G", "D", "F", "O", "S", "A", "P", "L"], ["I", "O", "A", "U", "A", "K", "E", "U", "A", "U", "V", "E"], ["S", "V", "S", "M", "I", "S", "F", "V", "S", "N", "W", "F"], ["F", "B", "Z", "J", "G", "T", "R", "P", "S", "L", "I", "A"], ["M", "I", "P", "Z", "Y", "U", "A", "H", "Q", "K", "T", "T"]], words = ["WIT", "TAFELTENNIS", "ATLAS", "DOOI", "VAAS", "SKI", "VORST", "TUIN", "DAK", "FRUIT"], placedWordPositions = {"TAFELTENNIS": [{"x": 11, "y": 11}, {"x": 11, "y": 10}, {"x": 11, "y": 9}, {"x": 11, "y": 8}, {"x": 11, "y": 7}, {"x": 11, "y": 6}, {"x": 11, "y": 5}, {"x": 11, "y": 4}, {"x": 11, "y": 3}, {"x": 11, "y": 2}, {"x": 11, "y": 1}], "ATLAS": [{"x": 1, "y": 5}, {"x": 2, "y": 6}, {"x": 3, "y": 7}, {"x": 4, "y": 8}, {"x": 5, "y": 9}], "VORST": [{"x": 8, "y": 6}, {"x": 8, "y": 5}, {"x": 8, "y": 4}, {"x": 8, "y": 3}, {"x": 8, "y": 2}], "FRUIT": [{"x": 1, "y": 6}, {"x": 2, "y": 7}, {"x": 3, "y": 8}, {"x": 4, "y": 9}, {"x": 5, "y": 10}], "DOOI": [{"x": 4, "y": 3}, {"x": 5, "y": 2}, {"x": 6, "y": 1}, {"x": 7, "y": 0}], "VAAS": [{"x": 7, "y": 9}, {"x": 8, "y": 8}, {"x": 9, "y": 7}, {"x": 10, "y": 6}], "TUIN": [{"x": 3, "y": 1}, {"x": 2, "y": 1}, {"x": 1, "y": 1}, {"x": 0, "y": 1}], "WIT": [{"x": 10, "y": 9}, {"x": 10, "y": 10}, {"x": 10, "y": 11}], "SKI": [{"x": 3, "y": 3}, {"x": 4, "y": 4}, {"x": 5, "y": 5}], "DAK": [{"x": 3, "y": 4}, {"x": 2, "y": 3}, {"x": 1, "y": 2}]};
         let foundWords = [], isSelecting = false, selectedCells = [], startCell = null;
         
         console.log('Woorden in deze puzzle:', words);
